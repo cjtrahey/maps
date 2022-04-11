@@ -7,20 +7,24 @@
 
     
 
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
 
     <title>Nooble Naps</title>
+    <style>
+    body {
+        margin: 0;
+    }
+    #map {
+        height: 100vh;
+        width: 100vw;
+    }
+    </style>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiY2p0cmFoZXkiLCJhIjoiY2wxdTNidDJjMjk2dzNjcGMzYnlsYmE0NyJ9.5E3DgU4t_ILD4KcxSplUbg';
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11'
-  });
-</script>
-
+    <div id='map'></div>
 </body>
 </html>
